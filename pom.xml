@@ -11,6 +11,10 @@
         <swagger.version>2.6.1</swagger.version>
         <spring.cloud.version>Edgware.RELEASE</spring.cloud.version>
         <luzhiqing.bamboo.constants>1.0-SNAPSHOT</luzhiqing.bamboo.constants>
+        <lombok.version>1.16.10</lombok.version>
+        <jooq.version>3.10.8</jooq.version>
+        <eureka.version>1.4.7.RELEASE</eureka.version>
+        <apollo.version>1.4.0</apollo.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -35,6 +39,36 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq</artifactId>
+                <version>${jooq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-meta</artifactId>
+                <version>${jooq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-codegen</artifactId>
+                <version>${jooq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-eureka</artifactId>
+                <version>${eureka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ctrip.framework.apollo</groupId>
+                <artifactId>apollo-client</artifactId>
+                <version>${apollo.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
