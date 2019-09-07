@@ -10,18 +10,17 @@
     <packaging>pom</packaging>
     <properties>
         <swagger.version>2.6.1</swagger.version>
-        <spring.cloud.version>Edgware.RELEASE</spring.cloud.version>
+        <spring.cloud.version>Greenwich.SR2</spring.cloud.version>
         <bamboo.version>1.0-SNAPSHOT</bamboo.version>
         <lombok.version>1.16.10</lombok.version>
         <jooq.version>3.10.8</jooq.version>
-        <eureka.version>1.4.7.RELEASE</eureka.version>
         <apollo.version>1.4.0</apollo.version>
         <orika.version>1.4.5</orika.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>2.1.6.RELEASE</version>
         <relativePath />
     </parent>
 
@@ -73,11 +72,6 @@
                 <version>${jooq.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-eureka</artifactId>
-                <version>${eureka.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.ctrip.framework.apollo</groupId>
                 <artifactId>apollo-client</artifactId>
                 <version>${apollo.version}</version>
@@ -86,6 +80,13 @@
                 <groupId>ma.glasnost.orika</groupId>
                 <artifactId>orika-core</artifactId>
                 <version>${orika.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
