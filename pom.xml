@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
-        <swagger.version>2.6.1</swagger.version>
+        <swagger.version>2.10.0</swagger.version>
         <spring.cloud.version>Greenwich.SR3</spring.cloud.version>
         <bamboo.version>1.0-SNAPSHOT</bamboo.version>
         <lombok.version>1.16.10</lombok.version>
